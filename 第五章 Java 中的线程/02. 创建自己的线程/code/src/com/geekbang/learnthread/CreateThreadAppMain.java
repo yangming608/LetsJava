@@ -17,7 +17,7 @@ public class CreateThreadAppMain {
             // TODO 理解代码是在线程里被执行的，同样的代码可以被多个线程执行。
             // TODO 暂停一下 Java ，看看有多少线程，每个线程的名字等信息
             Thread thread = new Thread(new PrintStoryRunnable(TEXT, 200 * i), "我的线程-" + i);
-            // TODO 创建好线程之后，如果要启动线程，必须调用start方法，注意不是run方法
+            // TODO 创建好线程之后，如果要启动线程，必须调用start方法，注意不是run方法 我在测试
             thread.start();
         }
 
